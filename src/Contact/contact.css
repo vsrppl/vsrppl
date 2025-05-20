@@ -1,0 +1,268 @@
+.contact {
+    margin-top: 50px;
+    background-color: #5d6852;
+    /* Olive green */
+    color: #f5f2e8;
+    /* Beige */
+    padding: 30px 20px;
+    border-radius: 8px 8px 0 0;
+}
+
+.contact-title {
+    font-size: 30px;
+    font-weight: 500;
+    color: #f5f2e8;
+    /* Beige */
+}
+
+.whatsapp-contact {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.whatsapp-contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #25D366;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+}
+
+.whatsapp-contact-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp-contact-btn:hover {
+  background-color: #128C7E;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-note {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .whatsapp-contact {
+    margin: 15px 0;
+  }
+  
+  .whatsapp-contact-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 12px 15px;
+    font-size: 16px;
+    max-width: 280px;
+  }
+}
+.contact-tiles {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: -10px;
+    padding-bottom: 20px;
+}
+
+.contact-tile-title {
+    font-size: 20px;
+    font-weight: 900;
+    color: #f5f2e8;
+    /* Beige */
+}
+
+.contact-tile-name {
+    color: #e8d9c0;
+    /* Light beige */
+    text-decoration: underline;
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.contact-tile-name:hover {
+    color: #ffffff;
+}
+
+.contact-maps {
+    width: 400px;
+    height: 200px;
+}
+
+.contact-form-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 30px;
+}
+
+.contact-form-container h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #f5f2e8;
+}
+
+.contact-form-item {
+    margin-bottom: 15px;
+}
+
+.contact-form-item input,
+.contact-form-item textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: #f5f2e8;
+}
+
+.contact-form-item textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.contact-form-button button {
+    background-color: #f5f2e8;
+    color: #5d6852;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-form-button button:hover {
+    background-color: #e8d9c0;
+    transform: translateY(-2px);
+}
+
+.contact-form-button button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.submission-message {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.success {
+    background-color: rgba(76, 175, 80, 0.2);
+    border: 1px solid rgba(76, 175, 80, 0.5);
+}
+
+.error {
+    background-color: rgba(244, 67, 54, 0.2);
+    border: 1px solid rgba(244, 67, 54, 0.5);
+}
+
+/* Form controls with beige background */
+.form-control, 
+.textfield,
+.textfieldemail {
+  background-color: var(--light-alt);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.form-control:focus,
+.textfield:focus,
+.textfieldemail:focus {
+  border-color: #015dab; /* Deep Blue */
+  box-shadow: 0 0 0 3px rgba(1, 93, 171, 0.1);
+}
+
+/* Footer form inputs */
+.footer-input,
+.footer-textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-input:focus,
+.footer-textarea:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+@media screen and (max-width : 768px) {
+    .contact-tiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-maps {
+        width: 100%;
+    }
+
+    /* Updated contact form mobile layout */
+    .contact-form {
+        padding: 10px 15px;
+    }
+
+    .contact-text-left {
+        width: 100%;
+    }
+
+    .contact-img-right {
+        display: none;
+    }
+
+    .contact-text {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .contact-title {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    /* Remove excessive BR tags */
+    br {
+        display: none;
+    }
+
+    /* Use margin for spacing instead */
+    .contact-email,
+    .contact-phone {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    /* Add proper spacing element */
+    .form-spacer {
+        height: 20px;
+    }
+
+    .textfield,
+    .textfieldemail {
+        padding: 12px 15px;
+        border-radius: 4px;
+        margin-bottom: 15px;
+    }
+
+    .contact-sendbtn {
+        margin: 10px auto;
+        display: block;
+        width: 100%;
+        max-width: 250px;
+        border-radius: 4px;
+    }
+}

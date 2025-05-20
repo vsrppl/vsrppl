@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2cf84446.css",
+    "main.js": "/static/js/main.9e6a04ee.js",
+    "static/js/453.ad6eb26e.chunk.js": "/static/js/453.ad6eb26e.chunk.js",
+    "static/media/laminateimgs.png": "/static/media/laminateimgs.5beccd1d6511d1c50a4b.png",
+    "static/media/cover1.jpg": "/static/media/cover1.c51580eb7417467dece8.jpg",
+    "static/media/random.jpg": "/static/media/random.91ef71d68875de96f317.jpg",
+    "static/media/cartons.jpg": "/static/media/cartons.90efefb266a83c39dadb.jpg",
+    "static/media/contactimg.png": "/static/media/contactimg.a1e4708a2ce9f6e08e74.png",
+    "static/media/aboutusrightimg.jpeg": "/static/media/aboutusrightimg.da09b8a050a7a964dccd.jpeg",
+    "static/media/cover2.jpg": "/static/media/cover2.4def85be4b47ee82eeb6.jpg",
+    "static/media/machinery1.jpeg": "/static/media/machinery1.cffe9a4b30ad6f53860d.jpeg",
+    "static/media/machinery6.jpeg": "/static/media/machinery6.2ee4a1875a88eecc3984.jpeg",
+    "static/media/aboutmainimg.jpeg": "/static/media/aboutmainimg.214fbb67ce4835550537.jpeg",
+    "static/media/machinery4.jpeg": "/static/media/machinery4.80f4342b174a070ca714.jpeg",
+    "static/media/textbook.jpeg": "/static/media/textbook.e19cf3fb9a9efe7d960d.jpeg",
+    "static/media/machinery3.jpeg": "/static/media/machinery3.51de9c287fe2bb31eded.jpeg",
+    "static/media/machinery2.jpeg": "/static/media/machinery2.1f8c903374f2828a385b.jpeg",
+    "static/media/image.jpg": "/static/media/image.9e1b34bd984cba21e305.jpg",
+    "static/media/machinery5.jpeg": "/static/media/machinery5.d10ccb1a029cc772e1b0.jpeg",
+    "static/media/homeimage.jpeg": "/static/media/homeimage.16a2956dd1016596bc3e.jpeg",
+    "static/media/calendars.jpeg": "/static/media/calendars.827278078b0fa21f4f3c.jpeg",
+    "static/media/books.jpeg": "/static/media/books.f61581647e9d06530df3.jpeg",
+    "static/media/others.jpeg": "/static/media/others.35224ceb662d6ff0db64.jpeg",
+    "index.html": "/index.html",
+    "main.2cf84446.css.map": "/static/css/main.2cf84446.css.map",
+    "main.9e6a04ee.js.map": "/static/js/main.9e6a04ee.js.map",
+    "453.ad6eb26e.chunk.js.map": "/static/js/453.ad6eb26e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2cf84446.css",
+    "static/js/main.9e6a04ee.js"
+  ]
+}

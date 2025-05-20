@@ -1,0 +1,229 @@
+.about-img {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    height: 400px;
+    /* Reduced from 500px for better proportion */
+    overflow: hidden;
+}
+
+.blurred-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px) brightness(0.7);
+    /* Slightly reduced blur for better image quality */
+    -webkit-filter: blur(3px) brightness(0.7);
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    height: 400px;
+    /* Match to container height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-img-title {
+    color: var(--title-color);
+    /* Light beige for better visibility */
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    /* Text shadow for better contrast */
+    max-width: 800px;
+}
+
+.about-viewbtn {
+    background-color: var(--accent);
+    /* Gold accent for better visibility */
+    color: #333;
+    /* Dark text on light background */
+    padding: 15px 35px;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.about-viewbtn:hover {
+    background-color: #c69214;
+    /* Darker gold */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.about-viewbtn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-viewbtn::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.about-viewbtn:hover::after {
+    transform: translateX(0);
+}
+
+.about-data {
+    display: flex;
+    align-items: center;
+}
+
+.about-para-title {
+    font-size: 40px;
+    font-weight: 500;
+    color: #2c3e50;
+    /* Dark blue-gray */
+}
+
+.about-para-text {
+    font-size: 25px;
+    font-weight: 500;
+    max-width: 800px;
+    color: #2c3e50;
+    /* Dark blue-gray */
+}
+
+.about-para-data {
+    padding: 0px 20px 0px 50px;
+    line-height: 2;
+}
+
+.about-para-data,
+.about-para-data-img {
+    width: 50%;
+}
+
+.about-para-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    /* Limit maximum height */
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-para-data-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.contact-display {
+    padding-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .about-img {
+        margin-top: 0;
+        height: 250px;
+        /* Smaller height on mobile */
+    }
+
+    .content {
+        height: 250px;
+        /* Match container */
+        min-height: 200px;
+        padding: 30px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .about-img-title {
+        font-size: 28px;
+    }
+
+    .about-viewbtn {
+        font-size: 16px;
+        padding: 12px 25px;
+        width: 80%;
+        max-width: 250px;
+        margin: 15px auto;
+        display: block;
+    }
+
+    .about-data {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .about-para-data,
+    .about-para-data-img {
+        width: 100%;
+    }
+
+    .about-para-data {
+        padding: 20px 15px;
+        width: 90%;
+    }
+
+    .about-para-img {
+        width: 100%;
+        max-height: 250px;
+        /* Smaller on mobile */
+        object-fit: contain;
+        margin: 10px auto;
+        display: block;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    .about-para-data-img {
+        padding: 0 15px;
+    }
+
+    .about-para-title {
+        font-size: 28px;
+    }
+
+    .about-para-text {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .contact-display {
+        padding: 0px 20px;
+    }
+
+    .blurred-image {
+        height: 100%;
+        min-height: 200px;
+    }
+}

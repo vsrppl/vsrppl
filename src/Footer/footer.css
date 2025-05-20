@@ -1,0 +1,359 @@
+/* Enhanced footer design */
+.footer-container {
+    background-color: var(--primary);
+    /* Deep navy blue */
+    color: var(--text-light);
+    padding: 40px 20px 20px;
+    width: 100%;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-form-section {
+    flex: 1.5;
+}
+
+.footer-title {
+    position: relative;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.footer-title::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--border);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-link {
+    color: var(--text-light);
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: 'Georgia', serif;
+}
+
+.footer-link:hover {
+    color: var(--accent);
+    /* Gold accent on hover */
+}
+
+.footer-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.footer-contact-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 12px;
+}
+
+.footer-contact-item i {
+    margin-right: 10px;
+    color: var(--text-light);
+}
+
+.contact-link {
+    color: var(--accent);
+    /* Gold accent */
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+/* Form Styles */
+.footer-form {
+    width: 100%;
+}
+
+.footer-input,
+.footer-textarea {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.footer-input:focus,
+.footer-textarea:focus {
+    background-color: rgba(255, 255, 255, 0.12);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-input::placeholder,
+.footer-textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Style for optional field placeholders */
+input[name="email"]::placeholder,
+textarea[name="message"]::placeholder {
+    font-style: italic;
+}
+
+.footer-textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.send-message-btn {
+    background-color: #d5d0c3;
+    color: #4a5240;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: 'Georgia', serif;
+}
+
+.send-message-btn:hover {
+    background-color: #c5b8a5;
+    transform: translateY(-2px);
+}
+
+.send-message-btn:disabled {
+    background-color: #c5c5c5;
+    cursor: not-allowed;
+}
+
+/* Success message styles */
+.success-container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.success-msg {
+    color: #d4edda;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: rgba(230, 255, 230, 0.1);
+    border: 1px solid rgba(0, 160, 0, 0.3);
+    border-radius: 4px;
+}
+
+.reset-form-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #ffffff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: background-color 0.3s;
+}
+
+.reset-form-btn:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.error-msg {
+    color: #f8d7da;
+    margin-top: 10px;
+}
+
+/* Map styles */
+.footer-map {
+    width: 100%;
+    height: 250px;
+    margin-top: 30px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.footer-map iframe {
+    width: 100% !important;
+    height: 100%;
+    border: none;
+    max-width: 100%;
+    position: relative;
+    left: 0;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    padding-top: 20px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* WhatsApp Button in Footer */
+.whatsapp-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #25D366;
+    /* WhatsApp green */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    /* Darker WhatsApp green */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.whatsapp-button img,
+.whatsapp-button svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Fixed WhatsApp Button */
+.whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    z-index: 1000;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #128C7E;
+}
+
+.whatsapp-float svg {
+    width: 32px;
+    height: 32px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        padding: 30px 15px 15px;
+    }
+
+    .footer-sections {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-section {
+        width: 100%;
+    }
+
+    .footer-form-section {
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .footer-form {
+        margin-bottom: 20px;
+    }
+
+    .footer-input,
+    .footer-textarea {
+        padding: 12px;
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+
+    .send-message-btn {
+        width: 100%;
+        padding: 12px;
+        margin-top: 5px;
+    }
+
+    .reset-form-btn {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .success-msg {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .footer-map {
+        height: 200px;
+        margin-top: 20px;
+        width: 100%;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+
+    .footer-map iframe {
+        height: 100%;
+    }
+
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 15px;
+        right: 15px;
+    }
+
+    .whatsapp-float svg {
+        width: 26px;
+        height: 26px;
+    }
+}

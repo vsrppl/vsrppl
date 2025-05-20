@@ -1,0 +1,108 @@
+.products-text {
+    margin-top: 50px;
+    font-size: 3.5vw;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 768px) {
+    .products-text {
+        font-size: 40px;
+    }
+}
+
+/* Product page styling */
+.quality-box {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+    margin-bottom: 30px;
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid var(--border);
+}
+
+.quality-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Create consistent image container */
+.image-container {
+    width: 100%;
+    height: 220px;
+    /* Fixed height for all product images */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    overflow: hidden;
+    background-color: var(--light-alt);
+    border-radius: 6px;
+}
+
+.quality-boximg {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+}
+
+.quality-box:hover .quality-boximg {
+    transform: scale(1.05);
+}
+
+/* Product title styling */
+.quality-title {
+    color: var(--heading-color);
+    font-size: 24px;
+    margin: 15px 0;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Product description text */
+.quality-text {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: center;
+    color: var(--text);
+}
+
+/* Section heading */
+.products-heading {
+    color: var(--heading-color);
+    font-size: 42px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.products-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: var(--accent);
+}
+
+/* Product container */
+.products-container {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+/* Product grid */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}

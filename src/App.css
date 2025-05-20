@@ -1,0 +1,863 @@
+/* Enhanced professional color palette */
+:root {
+  --primary: #00355f;
+  /* Deeper blue - more professional */
+  --primary-dark: #002547;
+  /* Darker blue for hover states */
+  --primary-light: #e6f0f9;
+  /* Light blue tint */
+  --secondary: #6c5a48;
+  /* Rich brown - elegant */
+  --accent: #daa520;
+  /* Classic gold - premium feel */
+  --light: #f9f8f6;
+  /* Clean off-white for backgrounds */
+  --light-alt: #f0ede5;
+  /* Subtle beige for alternating sections */
+  --text: #333333;
+  /* Dark gray for text */
+  --text-light: #ffffff;
+  /* White text for dark backgrounds */
+  --border: #d9d5cc;
+  /* Light taupe for borders */
+  --nav-bg: #003b69;
+  /* Slightly brighter blue for navbar */
+  --title-color: #f0ede5;
+  /* Light beige for better contrast with dark backgrounds */
+  --heading-color: #00355f;
+  /* Dark blue for headings */
+}
+
+.App {
+  background-color: var(--light);
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: var(--text);
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100vw;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.main-home {
+  padding: 0px 50px;
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.quality-boximg {
+  width: 100%;
+  height: 25vw;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Improved mobile styles */
+@media screen and (max-width: 768px) {
+  .main-home {
+    margin-top: 20px;
+    padding: 0px 15px;
+  }
+
+  .quality-text {
+    margin-top: 40px;
+    font-size: 28px;
+  }
+
+  .quality-group-boxes {
+    display: block;
+  }
+
+  .quality-box {
+    margin-bottom: 30px;
+    width: 100%;
+  }
+
+  .quality-boximg {
+    height: auto;
+    max-height: 200px;
+  }
+
+  .quality-title {
+    font-size: 24px;
+  }
+
+  .quality-description {
+    font-size: 16px;
+  }
+
+  .carousel-img {
+    height: auto;
+    min-height: 200px;
+  }
+
+  .company-introduction {
+    padding: 20px 15px;
+  }
+
+  .introduction-title {
+    font-size: 24px;
+  }
+
+  .introduction-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/* Global responsive fixes */
+img {
+  max-width: 100%;
+  height: auto;
+  image-rendering: -webkit-optimize-contrast;
+  /* Improve image sharpness on Chrome */
+  image-rendering: crisp-edges;
+  /* Improve image sharpness in general */
+}
+
+/* Fix image scaling to prevent blurriness */
+.quality-boximg,
+.contactpage-img,
+.about-para-img,
+.machinery-boximg,
+.carousel-img {
+  object-fit: contain;
+  image-rendering: -webkit-optimize-contrast;
+  transform: translateZ(0);
+  /* Force GPU rendering */
+}
+
+@media screen and (max-width: 768px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+    width: 100%;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  .App {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  /* Prevent horizontal scrolling */
+  .App,
+  .main-home,
+  .hero-carousel,
+  .contact-form,
+  .about,
+  .our-images,
+  .machinery-imgs {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  input,
+  textarea,
+  select,
+  button {
+    appearance: none;
+    -webkit-appearance: none;
+    font-size: 16px !important;
+    /* Prevent zoom on iOS */
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    font-size: 14px;
+  }
+
+  /* Fix overly large text */
+  h1,
+  h2 {
+    font-size: 24px !important;
+  }
+
+  h3,
+  h4 {
+    font-size: 20px !important;
+  }
+}
+
+/* Add to your existing App.css */
+* {
+  box-sizing: border-box;
+}
+
+/* Add to your global styles */
+@media screen and (max-width: 768px) {
+
+  h1,
+  h2,
+  h3,
+  .nav-mobile-button,
+  .contact-text {
+    font-size: calc(1rem + 1vw) !important;
+    /* Responsive font sizing */
+  }
+
+  p,
+  div,
+  span,
+  a,
+  li {
+    font-size: calc(0.85rem + 0.5vw);
+    /* Base font size for mobile */
+  }
+
+  .footer-title {
+    font-size: 18px !important;
+    /* Fixed size for footer headers */
+  }
+
+  .footer-link,
+  .contact-link {
+    font-size: 15px !important;
+    /* Fixed size for footer links */
+  }
+}
+
+/* Add/update these styles to fix mobile spacing */
+@media screen and (max-width: 768px) {
+
+  /* More specific selector to target the contact form */
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select,
+  .contact-form button {
+    margin-bottom: 10px !important;
+    font-size: 16px !important;
+  }
+
+  /* Fix label sizes and spacing */
+  .contact-form div:not(.contact-text):not(.contact-title):not(.contact-details):not(.success-message):not(.error-message) {
+    font-size: 14px !important;
+    margin-bottom: 2px !important;
+  }
+
+  /* Fix paragraph spacing */
+  p {
+    margin: 0.5em 0 !important;
+  }
+
+  /* Fix vertical spacing between sections */
+  .contact-form>div {
+    margin-bottom: 10px !important;
+  }
+
+  /* Better input field appearance on mobile */
+  input,
+  textarea,
+  select {
+    padding: 12px !important;
+  }
+
+  /* Override other font size declarations that might be too large */
+  .contact-text-left div,
+  .contact-text-right div {
+    font-size: 14px !important;
+  }
+
+  /* Remove default bottom margins that cause extra spacing */
+  div {
+    margin-bottom: 0;
+  }
+}
+
+/* Professional button styling */
+.contact-sendbtn,
+.about-viewbtn,
+.contact-us-button,
+.reset-form-btn {
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  border-radius: 4px;
+  padding: 12px 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-sendbtn:hover,
+.about-viewbtn:hover,
+.contact-us-button:hover,
+.reset-form-btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.contact-sendbtn:active,
+.about-viewbtn:active,
+.contact-us-button:active,
+.reset-form-btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Refined button system */
+.btn {
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-family: 'Georgia', serif;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background-color: #015dab;
+  /* Deep Blue */
+  color: #ffffff;
+  border-color: #015dab;
+}
+
+.btn-primary:hover {
+  background-color: #01498a;
+  /* Darker blue on hover */
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn-secondary {
+  background-color: transparent;
+  color: #015dab;
+  /* Deep Blue */
+  border-color: #015dab;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(59, 74, 61, 0.1);
+  transform: translateY(-2px);
+}
+
+.btn-light {
+  background-color: var(--light);
+  color: var(--primary);
+}
+
+.btn-light:hover {
+  background-color: #ffffff;
+}
+
+.btn-large {
+  padding: 14px 30px;
+  font-size: 18px;
+}
+
+.btn-small {
+  padding: 8px 18px;
+  font-size: 14px;
+}
+
+/* Enhanced typography system */
+h1,
+.h1-style {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  line-height: 1.3;
+  color: var(--heading-color);
+}
+
+h2,
+.h2-style {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  line-height: 1.3;
+  color: var(--heading-color);
+}
+
+h3,
+.h3-style {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  color: var(--heading-color);
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.text-large {
+  font-size: 1.125rem;
+}
+
+.text-small {
+  font-size: 0.875rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  h1,
+  .h1-style {
+    font-size: 1.75rem;
+  }
+
+  h2,
+  .h2-style {
+    font-size: 1.5rem;
+  }
+
+  h3,
+  .h3-style {
+    font-size: 1.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Professional typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+h1,
+.h1-style {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+h2,
+.h2-style {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+}
+
+h3,
+.h3-style {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 768px) {
+
+  h1,
+  .h1-style {
+    font-size: 1.75rem;
+  }
+
+  h2,
+  .h2-style {
+    font-size: 1.5rem;
+  }
+
+  h3,
+  .h3-style {
+    font-size: 1.25rem;
+  }
+}
+
+/* Special styling for page titles */
+.page-title {
+  color: var(--heading-color);
+  font-size: 42px;
+  margin: 40px 0 30px;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.page-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: var(--accent);
+}
+
+/* Enhanced form controls */
+.form-control {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--text);
+  font-size: 16px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 15px;
+  font-family: inherit;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(59, 74, 61, 0.1);
+}
+
+.form-control::placeholder {
+  color: #999;
+  opacity: 0.8;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-optional::after {
+  content: " (optional)";
+  font-size: 0.85em;
+  color: #777;
+  font-style: italic;
+}
+
+/* Apply these classes to your existing form controls */
+.textfield,
+.textfieldemail,
+.footer-input,
+.footer-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  background-color: var(--light);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.textfield:focus,
+.textfieldemail:focus,
+.footer-input:focus,
+.footer-textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(59, 74, 61, 0.1);
+}
+
+/* Form controls with beige background */
+.form-control,
+.textfield,
+.textfieldemail {
+  background-color: var(--light-alt);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.form-control:focus,
+.textfield:focus,
+.textfieldemail:focus {
+  border-color: #015dab;
+  /* Deep Blue */
+  box-shadow: 0 0 0 3px rgba(1, 93, 171, 0.1);
+}
+
+/* Footer form inputs */
+.footer-input,
+.footer-textarea {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-input:focus,
+.footer-textarea:focus {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Content cards and containers with beige background */
+.card {
+  background-color: var(--light-alt);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 25px;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #015dab;
+  /* Deep Blue */
+}
+
+.card-subtitle {
+  font-size: 1.1rem;
+  color: var(--secondary);
+  margin-bottom: 15px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 20px;
+  }
+
+  .section {
+    padding: 40px 0;
+  }
+}
+
+/* Apply this to your quality-box elements */
+.quality-box {
+  background-color: var(--light-alt);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quality-title {
+  color: #015dab;
+  /* Deep Blue */
+}
+
+/* Image hover effects */
+.img-hover-container {
+  overflow: hidden;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.img-hover {
+  transition: transform 0.5s ease;
+}
+
+.img-hover-container:hover .img-hover {
+  transform: scale(1.03);
+}
+
+/* Apply these classes to your image containers */
+.quality-boximg,
+.machinery-boximg {
+  transition: transform 0.5s ease;
+}
+
+.quality-box:hover .quality-boximg,
+.machinery-box:hover .machinery-boximg {
+  transform: scale(1.03);
+}
+
+/* Update company introduction section */
+.company-introduction {
+  margin: 50px auto;
+  padding: 30px 5%;
+  max-width: 1200px;
+  border-top: 1px solid #c0b7ae;
+  border-bottom: 1px solid #c0b7ae;
+  background-color: var(--light-alt);
+  border-radius: 8px;
+}
+
+.introduction-title {
+  color: #015dab;
+  /* Deep Blue */
+}
+
+/* Add smooth page transitions */
+.fade-in {
+  animation: fadeIn 0.5s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply this class to your main content containers */
+.main-home,
+.about,
+.contact-form,
+.our-images {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Apply this class to your main containers */
+.products-container,
+.about-container,
+.contact-container {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Link colors */
+a {
+  color: #015dab;
+  /* Deep Blue */
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #01498a;
+  /* Darker blue on hover */
+}
+
+/* Add these to ensure WhatsApp button displays correctly across all screens */
+
+/* Hide floating WhatsApp button when at the bottom of the page near footer */
+html:has(.footer-container:hover) .whatsapp-float {
+  opacity: 0;
+  pointer-events: none;
+}
+
+@media print {
+  .whatsapp-float {
+    display: none !important;
+  }
+}
+
+/* Ensure WhatsApp button is accessible */
+.whatsapp-float:focus {
+  outline: 2px solid white;
+  outline-offset: 2px;
+}
+
+/* Animation for floating button */
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+  }
+
+  70% {
+    box-shadow: 0 0 0 10px rgba(37, 211, 102, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+.whatsapp-float {
+  animation: pulse 2s infinite;
+}
+
+/* Updated WhatsApp floating button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  z-index: 1000;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+  background-color: #128C7E;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.whatsapp-float svg {
+  width: 32px;
+  height: 32px;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .whatsapp-float svg {
+    width: 26px;
+    height: 26px;
+  }
+}

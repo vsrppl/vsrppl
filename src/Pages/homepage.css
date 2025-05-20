@@ -1,0 +1,508 @@
+.main-home {
+    padding: 0px 50px;
+    overflow-x: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home-img {
+    width: 100%;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+.text-centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    font-size: 4.3vw;
+}
+
+.main-img-align {
+    width: 100%;
+}
+
+/* More professional product boxes - improved alignment and consistent sizing */
+.quality-box {
+    background-color: var(--light);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    transition: all 0.3s ease;
+    height: 450px;
+    /* Increased fixed height for all boxes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center all content inside boxes */
+    justify-content: flex-start;
+    /* Align from top */
+    border: 1px solid var(--border);
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.quality-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Fix product image size and alignment */
+.quality-boximg {
+    width: 100%;
+    height: 250px;
+    /* Increased fixed height for all images */
+    object-fit: contain;
+    /* Ensures image maintains aspect ratio */
+    margin-bottom: 20px;
+    border-radius: 4px;
+    display: block;
+    /* Helps with alignment */
+    background-color: #f9f9f9;
+    /* Light background to frame images */
+    padding: 10px;
+    border: 1px solid #eaeaea;
+    box-sizing: border-box;
+}
+
+/* Make title match with paragraph */
+.quality-text {
+    color: #0056a8;
+    /* Slightly darker blue to match header/paragraph colors */
+    font-size: 32px;
+    margin: 40px 0 30px;
+    /* Added more space above and below */
+    text-align: center;
+    font-weight: 600;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.quality-title {
+    color: #0056a8;
+    /* Match with quality-text color */
+    font-size: 24px;
+    margin: 15px 0 10px;
+    /* Better spacing */
+    font-weight: 600;
+    text-align: center;
+}
+
+.quality-description {
+    text-align: center;
+    line-height: 1.5;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #2c3e50;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    /* Limit to 4 lines for consistent heights */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding: 0 5px;
+    max-width: 90%;
+}
+
+/* Improve spacing in product boxes group */
+.quality-group-boxes {
+    display: flex;
+    gap: 30px;
+    /* Increased gap for better spacing */
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.sliding-images {
+    padding: 0px 20px
+}
+
+.carousel .thumbs-wrapper {
+    display: none;
+}
+
+.carousel .control-dots {
+    display: none;
+}
+
+/* Enhanced hero carousel */
+.hero-carousel {
+    position: relative;
+    margin-bottom: 40px;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.carousel-gradient-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    z-index: 1;
+}
+
+.carousel .slide {
+    background-color: var(--primary);
+}
+
+/* Make carousel images more consistent */
+.carousel-img {
+    width: 100%;
+    height: 450px;
+    object-fit: contain;
+    background-color: #f5f5f5;
+    /* Slightly lighter background */
+    transition: transform 0.3s ease;
+}
+
+/* Better carousel legend */
+.carousel .slide .legend {
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 800px;
+    width: 80% !important;
+    margin-left: 0 !important;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6) !important;
+    color: white;
+    border-radius: 6px;
+    padding: 15px 30px !important;
+}
+
+/* Carousel controls */
+.carousel .control-arrow {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    height: 50px !important;
+    width: 50px !important;
+    border-radius: 50% !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.carousel .control-arrow:hover {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.carousel .control-prev {
+    left: 20px !important;
+}
+
+.carousel .control-next {
+    right: 20px !important;
+}
+
+.paragraph {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.gallery-text {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.gallery-imgs {
+    display: flex;
+    justify-content: space-between;
+}
+
+.disp-img {
+    width: 500px;
+    height: 500px;
+}
+
+.our-images {
+    padding: 0px 20px;
+}
+
+.left-para,
+.right-para {
+    width: 50%;
+}
+
+.left-para,
+.right-para {
+    width: 400px;
+
+}
+
+.img-para {
+    width: 250px;
+    display: flex;
+    margin: auto;
+}
+
+
+.homepage-contact {
+    padding: 0px 20px;
+}
+
+/* Hero Carousel Styling */
+.hero-carousel {
+    margin-bottom: 40px;
+    overflow: hidden;
+    /* Add this to prevent overflow */
+    max-width: 100%;
+    /* Ensure it doesn't exceed viewport width */
+}
+
+.main-carousel {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    /* Ensure full width */
+}
+
+.legend-container {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: left;
+    width: auto;
+    /* Make sure it's not wider than the container */
+    max-width: 100%;
+    /* Don't exceed container width */
+}
+
+.carousel-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.carousel-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Customize Carousel Controls */
+.carousel .control-arrow {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.carousel .control-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.carousel .control-dots .dot {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Company Introduction Styling */
+.company-introduction {
+    margin: 50px auto;
+    padding: 30px 5%;
+    max-width: 1200px;
+    border-top: 1px solid #d0d7de;
+    /* Updated border color */
+    border-bottom: 1px solid #d0d7de;
+    /* Updated border color */
+    background-color: #e6f2ff;
+    /* Very light blue for section background */
+    border-radius: 8px;
+}
+
+.introduction-title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #2c3e50;
+    /* Dark blue-gray */
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.introduction-text {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #4a5240;
+    /* Darker olive green */
+    text-align: justify;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.introduction-text p {
+    margin-bottom: 25px;
+}
+
+/* Fix contact button positioning to be centered */
+.contact-button-container {
+    margin: 30px auto 10px;
+    display: flex;
+    justify-content: center;
+    /* Center the button horizontally */
+    width: 100%;
+    text-align: center;
+}
+
+.contact-us-button {
+    padding: 14px 28px;
+    font-size: 16px;
+    display: inline-block;
+    /* Ensures proper sizing */
+    margin: 0 auto;
+    /* Additional centering */
+}
+
+/* Style for the CONTACT US button that's shown in the image */
+#CONTACT_US,
+a.contact-us-button,
+.contact-us {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 200px;
+}
+
+/* Mobile Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .main-home {
+        margin-top: 20px;
+        padding: 0px 15px;
+    }
+
+    .quality-text {
+        margin-top: 40px;
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .quality-group-boxes {
+        display: block;
+    }
+
+    .main-img-align {
+        height: 600px;
+    }
+
+    .text-centered {
+        font-size: 40px;
+    }
+
+    .quality-boximg {
+        height: auto;
+        max-height: 180px;
+        width: 100%;
+        object-fit: contain;
+        margin: 0 auto 15px;
+        display: block;
+    }
+
+    .quality-box {
+        margin: 0 auto 25px;
+        padding: 15px;
+        width: 100%;
+        max-width: 350px;
+        text-align: center;
+        height: auto;
+        min-height: 320px;
+    }
+
+    .quality-title {
+        font-size: 24px;
+    }
+
+    .quality-description {
+        font-size: 16px;
+    }
+
+    /* FIXED MOBILE CAROUSEL STYLING */
+    .hero-carousel {
+        margin: 0 0 20px 0;
+        padding: 0;
+        max-width: 100% !important;
+        overflow: hidden;
+    }
+
+    .carousel-img {
+        height: auto;
+        width: 100% !important;
+        max-height: 250px;
+        object-fit: contain !important;
+        object-position: center;
+        display: block;
+    }
+
+    .carousel-title {
+        font-size: 1.8rem;
+    }
+
+    .carousel-subtitle {
+        font-size: 1rem;
+    }
+
+    .legend-container {
+        bottom: 20px;
+        padding: 15px 20px;
+    }
+
+    .carousel .slide .legend {
+        width: 90% !important;
+        bottom: 20px;
+        padding: 10px 15px !important;
+        font-size: 16px !important;
+    }
+
+    .carousel .control-arrow {
+        width: 30px !important;
+        height: 30px !important;
+        margin: 0 10px !important;
+    }
+
+    .company-introduction {
+        margin: 30px auto;
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    .introduction-title {
+        font-size: 24px;
+    }
+
+    .introduction-text {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .contact-us-button {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+
+    .contact-button-container {
+        margin: 30px auto 10px;
+    }
+
+    .carousel-slide::after {
+        bottom: 50px;
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}

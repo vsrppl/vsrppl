@@ -1,0 +1,403 @@
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px 50px;
+    align-items: flex-start;
+}
+
+.contact-text-left {
+    width: 50%;
+    padding-right: 20px;
+}
+
+.contact-text {
+    font-size: 70px;
+    font-weight: 500;
+    color: #2c3e50;
+    /* Dark blue-gray */
+}
+
+.contact-title {
+    margin-top: 10px;
+    font-size: 20px;
+    line-height: 2;
+    color: #2c3e50;
+    /* Dark blue-gray */
+    max-width: 550px;
+}
+
+.reach-color {
+    color: #0078d4;
+    /* Main blue matching logo */
+    text-decoration: underline;
+    cursor: pointer;
+    opacity: 0.9;
+    font-size: 18px;
+    transition: opacity 0.3s ease;
+}
+
+.reach-color:hover {
+    opacity: 1;
+}
+
+/* Fix input field styling globally */
+.textfield,
+.textfieldemail {
+    width: 100%;
+    background: #f5f8fa;
+    /* Light blue-gray */
+    border: 1px solid #d0d7de;
+    border-radius: 50px;
+    padding: 20px;
+    max-width: 240px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s ease;
+    color: #4a5240;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.textfieldemail {
+    max-width: 550px;
+    border-radius: 30px;
+}
+
+textarea.textfieldemail {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.textfieldemail:hover,
+.textfield:hover,
+.textfieldemail:focus,
+.textfield:focus {
+    border-color: #0078d4;
+    /* Main blue */
+    outline: none;
+    background: #ffffff;
+}
+
+.success-message {
+    background-color: #dff0d8;
+    color: #3c763d;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #d6e9c6;
+}
+
+.error-message {
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ebccd1;
+}
+
+.reset-form-btn {
+    background: #0078d4;
+    /* Main blue */
+    color: #f5f2e8;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reset-form-btn:hover {
+    background: #005a9e;
+    /* Darker blue */
+}
+
+.manual-email-info {
+    background: #f8f8f8;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Improve send button styling */
+.contact-sendbtn {
+    background: #0078d4;
+    /* Main blue */
+    padding: 15px 40px;
+    color: #f5f2e8;
+    width: auto;
+    border: none;
+    border-radius: 50px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: inline-block;
+}
+
+.contact-sendbtn:disabled {
+    background: #a0a99a;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.contact-sendbtn:hover {
+    background: #005a9e;
+    /* Darker blue */
+    transform: translateY(-2px);
+}
+
+.contact-details {
+    display: flex;
+    max-width: 600px;
+}
+
+.contact-address {
+    margin-top: 10px;
+    color: #352D28;
+}
+
+.contact-email {
+    margin-top: 10px;
+    color: #352D28;
+}
+
+.contact-phone {
+    margin-top: 10px;
+    color: #352D28;
+}
+
+.contact-img-right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactpage-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add spacer instead of BR tags */
+.spacer {
+    height: 30px;
+}
+
+/* Add these styles to support the new form layout */
+
+/* New row layout for contact details */
+.contact-details-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.contact-field-container {
+    flex: 1;
+    min-width: 200px;
+}
+
+/* Update textfield to fit in the row layout */
+.textfield {
+    width: 100%;
+    background: #f5f8fa;
+    border: 1px solid #d0d7de;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: border-color 0.3s ease;
+    color: #4a5240;
+    font-size: 16px;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+/* Make the layout responsive */
+@media screen and (max-width: 992px) {
+    .contact-details-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-field-container {
+        width: 100%;
+    }
+}
+
+/* Update required/optional field styling */
+.contact-form label::after {
+    content: " *";
+    color: #0078d4;
+}
+
+.contact-form label.optional::after {
+    content: " (optional)";
+    color: #767676;
+    font-size: 0.9em;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 768px) {
+    .contact-form {
+        flex-direction: column;
+        padding: 0px 15px;
+        width: 100%;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    .contact-text-left,
+    .contact-img-right {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .contact-text-left {
+        padding-right: 0;
+    }
+
+    .contact-text {
+        font-size: 28px;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .contact-title {
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .contactpage-img {
+        max-height: 180px;
+        width: 100%;
+        margin: 15px auto;
+        object-fit: contain;
+    }
+
+    /* Fix spacing between form fields */
+    .textfield,
+    .textfieldemail {
+        width: 100%;
+        max-width: 100%;
+        padding: 12px;
+        margin: 5px 0 10px;
+        box-sizing: border-box;
+    }
+
+    /* Remove extra spacing between form sections */
+    .contact-text-left div:not(.contact-text):not(.contact-title):not(.contact-details):not(.success-message):not(.error-message) {
+        margin-bottom: 3px;
+        font-size: 14px;
+    }
+
+    /* Remove extra breaks */
+    br {
+        display: none;
+    }
+
+    /* Adjust contact details */
+    .contact-details {
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .contact-email,
+    .contact-phone {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    /* Better success message positioning */
+    .success-message,
+    .error-message {
+        padding: 12px;
+        margin: 10px 0;
+    }
+
+    .reset-form-btn {
+        margin: 10px auto;
+        display: block;
+    }
+
+    /* Make submit button stand out better */
+    .contact-sendbtn {
+        padding: 12px 25px;
+        font-size: 16px;
+        margin: 10px auto;
+        display: block;
+    }
+
+    /* Adjust button size on mobile */
+    .contact-sendbtn {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    textarea.textfieldemail {
+        min-height: 120px;
+    }
+
+    .desktop-only {
+        display: none;
+    }
+
+    .contact-img-right {
+        display: none;
+    }
+
+    /* When image is hidden, make form take full width */
+    .contact-text-left {
+        width: 100%;
+    }
+
+    /* Remove extra vertical spacing created for image */
+    .contact-form {
+        padding: 10px 15px;
+    }
+
+    .spacer {
+        height: 15px;
+    }
+}
+
+/* Improve laptop display (medium to large screens) */
+@media screen and (min-width: 769px) and (max-width: 1366px) {
+    .contact-img-right {
+        width: 40%;
+        padding-left: 20px;
+    }
+
+    .contact-text-left {
+        width: 60%;
+    }
+
+    .contactpage-img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1367px) {
+    .contactpage-img {
+        max-width: 550px;
+    }
+
+    .contact-img-right {
+        padding-left: 30px;
+    }
+}

@@ -1,0 +1,36 @@
+.machinery-boximg {
+    width: 100%;
+    height: auto;
+    max-height: 35vw;
+    object-fit: contain;
+}
+
+.machinery-box {
+    width: 100%;
+    padding: 0px 1.5vw;
+}
+
+.machinery-imgs {
+    display: flex;
+    padding: 0px 4vw
+}
+
+@media screen and (max-width: 768px) {
+    .machinery-boximg {
+        max-height: 200px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .machinery-box {
+        width: 100%;
+        padding: 0 0 15px 0;
+    }
+
+    .machinery-imgs {
+        display: block;
+        flex-direction: column;
+        padding: 0 10px;
+        margin-bottom: 15px;
+    }
+}
